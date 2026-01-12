@@ -23,7 +23,7 @@ export default function Home() {
             My Digital Garden
           </div>
           <h1 className="font-serif text-4xl font-medium tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
-            Library & <span className="text-muted-foreground italic">Antilibrary</span>
+            Library
           </h1>
           <p className="mt-6 text-lg text-muted-foreground md:text-xl max-w-2xl leading-relaxed">
             A curated collection of books, research papers, and essays that have significantly influenced my worldview. 
