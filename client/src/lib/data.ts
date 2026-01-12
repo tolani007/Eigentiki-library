@@ -44,7 +44,7 @@ export const libraryItems: LibraryItem[] = [
     year: '1945',
     cover: '/images/great-divorce.jpg',
     type: 'book',
-    link: 'https://www.amazon.com/Great-Divorce-C-S-Lewis/dp/0060652950'
+    link: 'https://www.fadedpage.com/showbook.php?pid=20140726'
   },
   {
     id: '5',
