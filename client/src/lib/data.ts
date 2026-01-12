@@ -80,7 +80,7 @@ export const libraryItems: LibraryItem[] = [
     year: '2013',
     cover: '/images/we-need-new-names.jpg',
     type: 'book',
-    link: 'https://www.amazon.com/We-Need-New-Names-Novel/dp/0316230840'
+    link: 'https://www.scribd.com/document/393999403/We-Need-New-Names'
   },
   
   // Research Papers
