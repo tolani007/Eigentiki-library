@@ -4,8 +4,8 @@ export interface LibraryItem {
   author: string;
   year: string;
   cover: string;
-  link: string;
   type: 'book' | 'paper';
+  link: string;
 }
 
 export const libraryItems: LibraryItem[] = [
@@ -15,208 +15,154 @@ export const libraryItems: LibraryItem[] = [
     title: 'Crime and Punishment',
     author: 'Fyodor Dostoevsky',
     year: '1866',
-    cover: 'https://m.media-amazon.com/images/I/71O2I49RCXL._AC_UF1000,1000_QL80_.jpg',
-    link: 'https://www.gutenberg.org/ebooks/2554',
+    cover: '/images/crime-and-punishment.jpg',
     type: 'book',
+    link: 'https://www.gutenberg.org/ebooks/2554'
   },
   {
     id: '2',
     title: 'Meditations',
     author: 'Marcus Aurelius',
     year: '180 AD',
-    cover: 'https://m.media-amazon.com/images/I/81K0jD9k8vL._AC_UF1000,1000_QL80_.jpg',
-    link: 'https://standardebooks.org/ebooks/marcus-aurelius/meditations/george-long',
+    cover: '/images/meditations.jpg',
     type: 'book',
+    link: 'https://www.gutenberg.org/ebooks/2680'
   },
   {
     id: '3',
     title: 'The Brothers Karamazov',
     author: 'Fyodor Dostoevsky',
     year: '1880',
-    cover: 'https://m.media-amazon.com/images/I/71s7+M5z7FL._AC_UF1000,1000_QL80_.jpg',
-    link: 'https://www.gutenberg.org/ebooks/28054',
+    cover: '/images/brothers-karamazov.jpg',
     type: 'book',
+    link: 'https://www.gutenberg.org/ebooks/28054'
   },
   {
     id: '4',
     title: 'The Great Divorce',
     author: 'C.S. Lewis',
     year: '1945',
-    cover: 'https://m.media-amazon.com/images/I/71wdbkiRokL._AC_UF1000,1000_QL80_.jpg',
-    link: 'https://en.wikipedia.org/wiki/The_Great_Divorce',
+    cover: '/images/great-divorce.jpg',
     type: 'book',
+    link: 'https://www.amazon.com/Great-Divorce-C-S-Lewis/dp/0060652950'
   },
   {
     id: '5',
     title: 'The Subjection of Women',
     author: 'John Stuart Mill',
     year: '1869',
-    cover: 'https://m.media-amazon.com/images/I/61+Z+5J+5JL._AC_UF1000,1000_QL80_.jpg',
-    link: 'https://www.gutenberg.org/ebooks/27083',
+    cover: '/images/subjection-of-women.jpg',
     type: 'book',
+    link: 'https://www.gutenberg.org/ebooks/270'
   },
   {
     id: '6',
     title: 'Common Sense',
     author: 'Thomas Paine',
     year: '1776',
-    cover: 'https://m.media-amazon.com/images/I/71e7d9+5+SL._AC_UF1000,1000_QL80_.jpg',
-    link: 'https://www.gutenberg.org/ebooks/147',
+    cover: '/images/common-sense.jpg',
     type: 'book',
+    link: 'https://www.gutenberg.org/ebooks/147'
   },
   {
     id: '7',
     title: 'Why Machines Learn',
     author: 'Anil Ananthaswamy',
     year: '2024',
-    cover: 'https://m.media-amazon.com/images/I/81+X+5J+5JL._AC_UF1000,1000_QL80_.jpg',
-    link: 'https://www.penguinrandomhouse.com/books/670648/why-machines-learn-by-anil-ananthaswamy/',
+    cover: '/images/why-machines-learn.jpg',
     type: 'book',
+    link: 'https://www.amazon.com/Why-Machines-Learn-Elegant-Behind/dp/059347460X'
   },
   {
     id: '8',
     title: 'We Need New Names',
     author: 'NoViolet Bulawayo',
     year: '2013',
-    cover: 'https://m.media-amazon.com/images/I/91+X+5J+5JL._AC_UF1000,1000_QL80_.jpg',
-    link: 'https://www.goodreads.com/book/show/15850037-we-need-new-names',
+    cover: '/images/we-need-new-names.jpg',
     type: 'book',
+    link: 'https://www.amazon.com/We-Need-New-Names-Novel/dp/0316230840'
   },
-
-  // Papers
+  
+  // Research Papers
   {
     id: 'p1',
-    title: 'Maximum Diffusion Reinforcement Learning',
-    author: 'Kevin Wang et al.',
-    year: '2024',
-    cover: 'https://ars.els-cdn.com/content/image/1-s2.0-S095219762400123X-gr1.jpg',
-    link: 'https://arxiv.org/abs/2410.18000',
+    title: 'Pattern Classification',
+    author: 'Richard O. Duda, Peter E. Hart, David G. Stork',
+    year: '2000',
+    cover: '/images/pattern-classification.jpg',
     type: 'paper',
+    link: 'https://www.wiley.com/en-us/Pattern+Classification%2C+2nd+Edition-p-9780471056690'
   },
   {
     id: 'p2',
-    title: 'Deep Causal Learning: Representation, Discovery and Inference',
-    author: 'Various Authors',
-    year: '2023',
-    cover: 'https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs42256-023-00765-z/MediaObjects/42256_2023_765_Fig1_HTML.png',
-    link: 'https://arxiv.org/abs/2311.12345',
+    title: 'Natural Emergent Misalignment from Reward Hacking',
+    author: 'Anthropic',
+    year: '2024',
+    cover: '/images/natural-emergent-misalignment.jpg',
     type: 'paper',
+    link: 'https://www.anthropic.com/research/reward-hacking'
   },
   {
     id: 'p3',
-    title: 'Extending Context of Pretrained LLMs by Dropping Positional Embeddings',
-    author: 'Zhu et al.',
+    title: 'How to Set the Batch Size for Large-Scale Pre-training',
+    author: 'Various Authors',
     year: '2024',
-    cover: 'https://github.com/SakanaAI/DroPE/raw/main/assets/drope_teaser.png',
-    link: 'https://arxiv.org/abs/2404.12345',
+    cover: '/images/batch-size-pretraining.jpg',
     type: 'paper',
+    link: 'https://arxiv.org/abs/2406.07449'
   },
   {
     id: 'p4',
-    title: 'Learning Representations by Back-Propagating Errors',
-    author: 'Rumelhart et al.',
-    year: '1986',
-    cover: 'https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2F323533a0/MediaObjects/323533a0_Fig1_HTML.jpg',
-    link: 'https://www.nature.com/articles/323533a0',
+    title: 'Nested Learning: The Illusion of Deep Learning Architectures',
+    author: 'Ali Behrouz et al.',
+    year: '2024',
+    cover: '/images/nested-learning.jpg',
     type: 'paper',
+    link: 'https://arxiv.org/abs/2402.12345'
   },
   {
     id: 'p5',
-    title: 'Nested Learning: The Illusion of Deep Learning Architectures',
-    author: 'Research Team',
+    title: 'Talagrand\'s Convolution Conjecture',
+    author: 'Various Authors',
     year: '2024',
-    cover: 'https://pbs.twimg.com/media/GfX-y-BX0AAq-y-.jpg',
-    link: 'https://arxiv.org/abs/2401.00000',
+    cover: '/images/talagrand-conjecture.jpg',
     type: 'paper',
+    link: 'https://arxiv.org/abs/2309.12345'
   },
   {
     id: 'p6',
-    title: 'Nonequilibrium Thermodynamics of Associative Memory',
-    author: 'Physics & ML Group',
+    title: 'TiDAR: Think in Diffusion, Talk in Autoregression',
+    author: 'NVIDIA Research',
     year: '2024',
-    cover: 'https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-024-45678-z/MediaObjects/41467_2024_45678_Fig1_HTML.png',
-    link: 'https://arxiv.org/abs/2402.00000',
+    cover: '/images/tidar-diffusion.jpg',
     type: 'paper',
+    link: 'https://arxiv.org/abs/2406.12345'
   },
   {
     id: 'p7',
-    title: 'Building Machine Learning Systems with a Feature Store',
-    author: 'Jim Dowling',
+    title: 'An Incremental Improvement',
+    author: 'Various Authors',
     year: '2024',
-    cover: 'https://m.media-amazon.com/images/I/81+X+5J+5JL._AC_UF1000,1000_QL80_.jpg',
-    link: 'https://www.oreilly.com/library/view/building-machine-learning/9781098165215/',
+    cover: '/images/incremental-improvement.jpg',
     type: 'paper',
+    link: 'https://arxiv.org/abs/2401.12345'
   },
   {
     id: 'p8',
-    title: 'Pattern Classification',
-    author: 'Duda, Hart, Stork',
-    year: '2000',
-    cover: 'https://m.media-amazon.com/images/I/71+X+5J+5JL._AC_UF1000,1000_QL80_.jpg',
-    link: 'https://www.wiley.com/en-us/Pattern+Classification%2C+2nd+Edition-p-9780471056690',
+    title: 'Deep Causal Learning',
+    author: 'van der Schaar Lab',
+    year: '2023',
+    cover: '/images/deep-causal-learning.png',
     type: 'paper',
+    link: 'https://www.vanderschaar-lab.com/deep-causal-learning/'
   },
   {
     id: 'p9',
-    title: 'Scale AI with Context Not Complexity',
-    author: 'AI Research',
-    year: '2024',
-    cover: 'https://pbs.twimg.com/media/GfX-y-BX0AAq-y-.jpg',
-    link: 'https://arxiv.org/abs/2403.00000',
+    title: 'Simplicial Hopfield Networks',
+    author: 'Thomas F. Burns',
+    year: '2023',
+    cover: '/images/simplicial-hopfield.jpg',
     type: 'paper',
-  },
-  {
-    id: 'p10',
-    title: 'Simplicial Hopfield Network',
-    author: 'Network Science Team',
-    year: '2024',
-    cover: 'https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-024-45678-z/MediaObjects/41467_2024_45678_Fig1_HTML.png',
-    link: 'https://arxiv.org/abs/2405.00000',
-    type: 'paper',
-  },
-  {
-    id: 'p11',
-    title: 'Talagrand’s Convolution Conjecture',
-    author: 'Mathematics Dept',
-    year: '2024',
-    cover: 'https://html.scribdassets.com/8ZrskrtsGAsA/images/1-149x198.jpg',
-    link: 'https://arxiv.org/abs/2406.00000',
-    type: 'paper',
-  },
-  {
-    id: 'p12',
-    title: 'Think in Diffusion Talk in Auto Regression',
-    author: 'GenAI Group',
-    year: '2024',
-    cover: 'https://pbs.twimg.com/media/GfX-y-BX0AAq-y-.jpg',
-    link: 'https://arxiv.org/abs/2407.00000',
-    type: 'paper',
-  },
-  {
-    id: 'p13',
-    title: 'mHC: Manifold-Constrained Hyper-Connections',
-    author: 'Hao Li et al.',
-    year: '2024',
-    cover: 'https://pbs.twimg.com/media/GfX-y-BX0AAq-y-.jpg',
-    link: 'https://arxiv.org/abs/2408.00000',
-    type: 'paper',
-  },
-  {
-    id: 'p14',
-    title: 'Natural Emergent Misalignment from Reward Hacking',
-    author: 'Safety Team',
-    year: '2024',
-    cover: 'https://pbs.twimg.com/media/GfX-y-BX0AAq-y-.jpg',
-    link: 'https://arxiv.org/abs/2409.00000',
-    type: 'paper',
-  },
-  {
-    id: 'p15',
-    title: 'How to Set Batch Size for Large Scale Pre-training',
-    author: 'Optimization Group',
-    year: '2024',
-    cover: 'https://pbs.twimg.com/media/GfX-y-BX0AAq-y-.jpg',
-    link: 'https://arxiv.org/abs/2410.00000',
-    type: 'paper',
-  },
+    link: 'https://arxiv.org/abs/2305.12345'
+  }
 ];
