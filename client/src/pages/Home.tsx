@@ -1,4 +1,5 @@
 import { LibraryCard } from "@/components/LibraryCard";
+import { LiquidHeart } from "@/components/LiquidHeart";
 import { Button } from "@/components/ui/button";
 import {
   Tooltip,
@@ -29,9 +30,12 @@ export default function Home() {
             </span>
             My Digital Garden
           </div>
-          <h1 className="font-serif text-4xl font-medium tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
-            Library
-          </h1>
+          <div className="flex items-center gap-4">
+            <h1 className="font-serif text-4xl font-medium tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
+              Eigentiki's library
+            </h1>
+            <LiquidHeart className="h-16 w-16 md:h-20 md:w-20" />
+          </div>
           <p className="mt-6 text-lg text-muted-foreground md:text-xl max-w-2xl leading-relaxed">
             A curated collection of books, research papers, and essays that have significantly influenced my worldview. 
             Hover to explore the sources.
