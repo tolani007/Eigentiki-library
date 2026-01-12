@@ -53,7 +53,7 @@ export const libraryItems: LibraryItem[] = [
     year: '1869',
     cover: '/images/subjection-of-women.jpg',
     type: 'book',
-    link: 'https://www.gutenberg.org/ebooks/270'
+    link: 'https://www.gutenberg.org/ebooks/27083'
   },
   {
     id: '6',
