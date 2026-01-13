@@ -7,9 +7,17 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Coffee, CreditCard, Wallet } from "lucide-react";
+import { Coffee, CreditCard, Wallet, AlertCircle } from "lucide-react";
+import { useState } from "react";
 
 export function DonationButton() {
+  const [showPayPalNotice, setShowPayPalNotice] = useState(false);
+
+  const handlePayPalClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    setShowPayPalNotice(true);
+  };
+
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -44,24 +52,27 @@ export function DonationButton() {
             </Button>
           </a>
           
-          <a
-            href="https://paypal.me"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={handlePayPalClick}
             className="w-full"
-            onClick={(e) => {
-               // Placeholder alert until user adds their link
-               if (e.currentTarget.href === 'https://paypal.me/') {
-                 e.preventDefault();
-                 alert("Please configure your PayPal.me link in DonationButton.tsx");
-               }
-            }}
           >
             <Button className="w-full gap-2 bg-[#0070BA] hover:bg-[#005EA6] text-white" size="lg">
               <Wallet className="h-5 w-5" />
               Donate via PayPal
             </Button>
-          </a>
+          </button>
+
+          {showPayPalNotice && (
+            <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 dark:border-amber-900 dark:bg-amber-950/30">
+              <div className="flex gap-3">
+                <AlertCircle className="h-5 w-5 flex-shrink-0 text-amber-600 dark:text-amber-400" />
+                <div className="text-sm text-amber-800 dark:text-amber-200">
+                  <p className="font-semibold">PayPal donation route is not operational yet.</p>
+                  <p className="mt-1 text-xs opacity-90">Please use the Stripe option above for now. PayPal will be available soon!</p>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </DialogContent>
     </Dialog>
