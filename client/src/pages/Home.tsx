@@ -1,3 +1,4 @@
+import { DonationButton } from "@/components/DonationButton";
 import { LibraryCard } from "@/components/LibraryCard";
 import { LiquidHeart } from "@/components/LiquidHeart";
 import { Button } from "@/components/ui/button";
@@ -97,6 +98,11 @@ export default function Home() {
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
+          </div>
+
+          {/* Donation Button */}
+          <div className="mt-6">
+            <DonationButton />
           </div>
         </div>
 
